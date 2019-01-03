@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title>ErrBnB</title>
+  </head>
+  <body>
+    <div id="gallery"></div>
+    <div id="reviews"></div>
+    <div id="booking"></div>
+    <div id="recommendations"></div>
+    <script src="./lib/react.development.js"></script>
+    <script src="./lib/react-dom.development.js"></script>
+    <script src="http://localhost:1337/rooms/:id/bundle.js"></script>
+    <script src="http://localhost:3124/rooms/:roomid/reviews.js"></script>
+    <script src="http://localhost:8080/bundle.js"></script>
+    <script src="http://localhost:3123/rooms/:roomids/bundle.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      document.addEventListener('load', () => {
+        ReactDOM.render(
+          React.createElement(Gallery),
+          document.getElementById('Gallery')
+        );
+        ReactDOM.render(
+          React.createElement(Reviews),
+          document.getElementById('Reviews')
+        );
+        ReactDOM.render(
+          React.createElement(Bookings),
+          document.getElementById('booking')
+        );
+        ReactDOM.render(
+          React.createElement(Recommendations),
+          document.getElementById('recommendations')
+        );
+      });
+    </script>
+  </body>
+</html>
