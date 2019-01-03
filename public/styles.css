@@ -1,0 +1,159 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* GALLERY */
+
+#gallery {
+/* width: 100vw; */
+}
+
+.center a{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.caption,
+.showList {
+  color: white;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+#lightbulb {
+  height: 4vh !important;
+}
+
+#recommendations {
+  display: inline-block;
+  width: 100%;
+}
+
+/* BOOKING */
+
+#booking {
+  margin: 25px 0px 0px 50px;
+  float: right;
+  display: block;
+  position: sticky;
+  top: 25px;
+  right: 18vw;
+  /* max-width: 25%;
+  min-width: 25%; */
+  font-family: 'Montserrat', sans-serif;
+  width: 280px;
+}
+
+#booking-bar {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+#date-picker-container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: start;
+}
+
+.date-picker {
+  width: 80%;
+}
+
+#stars {
+  padding-top: 5px;
+}
+
+ /* REVIEWS  */
+#reviews {
+  float: left;
+  margin-left: 75px;
+  width: 50vw;
+}
+
+.reviewsService {
+  width: 100% !important;
+}
+
+.categories {
+  border-style: hidden;
+}
+
+.stars {
+  border-style: hidden;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  transition: -ms-transform 450ms cubic-bezier(0.645, 0.0450, 0.355, 1) 0s, -webkit-transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition-property: -ms-transform, -webkit-transform, transform;
+  transition-duration: 450ms, 450ms, 450ms;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0s, 0s, 0s;
+}
+
+/* RECCS */
+#recommendations {
+  display: block !important;
+  width: 90%;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homes {
+  font-family: 'Lato', sans-serif !important;
+  color: #484848;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.photo {
+  height: 280px !important;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  width: 100% !important;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 0.55px;
+}
+
+.boxie {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 1px !important;
+  width: 400px !important;
+}
+
+.boxie:hover {
+  transform: scale(1.02);
+  transition: -ms-transform 450ms cubic-bezier(0.645, 0.0450, 0.355, 1) 0s, -webkit-transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition-property: -ms-transform, -webkit-transform, transform;
+  transition-duration: 450ms, 450ms, 450ms;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0s, 0s, 0s;
+}
+
+.roomtype {
+  margin-left: 5px !important;
+  font-size: 13px !important;
+}
+
+.title {
+  margin-left: 5px !important;
+  font-size: 17px !important;
+}
+
+.roomcost {
+  margin-left: 5px !important;
+  font-size: 13.5px;
+}
+
+.review {
+  margin-left: 5px !important;
+}
+
+.ratingStars{
+  margin-left: 6px !important;
+  margin-bottom: 5px !important;
+}
+
+.scrolls {
+  padding-bottom: 20px;
+  display: flex !important;
+}
