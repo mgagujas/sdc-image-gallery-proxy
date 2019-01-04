@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 const proxy = require('http-proxy-middleware');
 
 app.use(morgan('dev'));
+// app.use(express.static('./public'));
 app.use('/rooms/:roomid', express.static('./public'));
 
 app.use('/rooms/:id/photos', proxy({target: 'http://localhost:1337'}));

@@ -114,6 +114,7 @@ html {
 
 .stars {
   border-style: hidden;
+  padding-left: 2.5px !important;
 }
 
 .avatar:hover {
