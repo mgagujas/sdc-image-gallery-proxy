@@ -3,7 +3,6 @@ html {
   overflow-x: hidden;
 }
 
-/* GALLERY /////////////////////////////////////////////////////////////////////*/
 .body {
   margin-left: -7.6px;
 }
@@ -25,12 +24,22 @@ html {
   user-select: none !important;
 }
 
+#image0 {
+  min-width: 486px;
+  min-height: 280px;
+}
+#image1,
+#image2,
+#image3,
+#image4 {
+  min-width: 244px;
+  min-height: 140px;
+}
+
 #recommendations {
   display: inline-block;
   width: 100%;
 }
-
-/* BOOKING /////////////////////////////////////////////////////////////////////*/
 
 #booking {
   margin: 25px 0px 0px 50px;
@@ -77,7 +86,10 @@ html {
   padding-top: 5px;
 }
 
- /* REVIEWS /////////////////////////////////////////////////////////////////////*/
+#month {
+  display: inline-block;
+  min-width: 33%;
+}
 
 #reviews {
   float: left;
@@ -122,46 +134,45 @@ html {
   opacity: 0.8;
 }
 
-/* RECCS /////////////////////////////////////////////////////////////////////*/
-
 #recommendations {
   display: block !important;
-  width: 90%;
-  overflow-x: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90% !important;
+  overflow-x: hidden !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .homes {
   font-family: 'Lato', sans-serif !important;
-  color: #484848;
-  font-size: 24px;
-  font-weight: 900;
+  color: #484848 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
 }
 
 .photo {
   height: 280px !important;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24) !important;
   width: 100% !important;
-  border-bottom-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 0.55px;
+  border-bottom-color: black !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 0.55px !important;
 }
 
 .boxie {
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24) !important;
   border-radius: 1px !important;
   margin-right: 15px !important;
   width: 350px !important;
+  margin-top: 0px !important;
 }
 
 .boxie:hover {
-  transform: scale(1.02);
-  transition: -ms-transform 450ms cubic-bezier(0.645, 0.0450, 0.355, 1) 0s, -webkit-transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-  transition-property: -ms-transform, -webkit-transform, transform;
-  transition-duration: 450ms, 450ms, 450ms;
-  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition-delay: 0s, 0s, 0s;
+  transform: scale(1.02) !important;
+  transition: -ms-transform 450ms cubic-bezier(0.645, 0.0450, 0.355, 1) 0s, -webkit-transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s !important;
+  transition-property: -ms-transform, -webkit-transform, transform !important;
+  transition-duration: 450ms, 450ms, 450ms !important;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  transition-delay: 0s, 0s, 0s !important;
 }
 
 .roomtype {
@@ -172,11 +183,24 @@ html {
 .title {
   margin-left: 5px !important;
   font-size: 15px !important;
+  overflow: hidden !important;
+  word-break: normal !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 98.5% !important;
+  line-height: 22px !important;
+  max-height: 44px !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  color: rgb(72, 72, 72) !important;
+  margin: 3px !important;
 }
 
 .roomcost {
   margin-left: 5px !important;
-  font-size: 13.5px;
+  font-size: 13.5px !important;
 }
 
 .review {
@@ -192,4 +216,4 @@ html {
   padding-bottom: 20px;
   display: flex !important;
 }
-/* /////////////////////////////////////////////////////////////////////////////////*/
+
