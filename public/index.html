@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
-    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <title>errbnb</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Montserrat:400,700" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.css">
-    <title>ErrBnB</title>
   </head>
   <body>
+    <h1>errbnb</h1>
+    
     <div id="gallery"></div>
-    <div id="reviews"></div>
-    <div id="booking"></div>
+    <div id="description">
+      <div id="reviews"></div>
+      <div id="booking"></div>
+    </div>
     <div id="recommendations"></div>
-    <script src="./lib/react.production.min.js"></script>
-    <script src="./lib/react-dom.production.min.js"></script>
-    <script src="http://54.175.98.175/rooms/:id/bundle.js"></script>
-    <script src="http://54.202.111.150/rooms/:roomid/reviews.js"></script>
-    <script src="http://54.67.99.254/bundle.js"></script>
-    <script src="http://18.223.185.89/rooms/:roomids/bundle.js"></script>
+
+    <script src="./lib/react.development.js"></script>
+    <script src="./lib/react-dom.development.js"></script>
+
+    <script src="http://localhost:3124/rooms/:roomid/reviews.js"></script>
+    <script src="http://localhost:1337/rooms/:roomid/bundle.js"></script>
+    <script src="http://localhost:8080/bundle.js"></script>
+    <script src="http://localhost:3123/rooms/:roomid/bundle.js"></script>
+    <script>
+      document.addEventListener('load', () => {
+        ReactDOM.render(
+          React.createElement(Gallery), 
+          document.getElementById("gallery")
+        );
+        ReactDOM.render(
+          React.createElement(Reviews), 
+          document.getElementById("reviews")
+        );
+        ReactDOM.render(
+          React.createElement(Booking), 
+          document.getElementById("booking")
+        );
+        ReactDOM.render(
+          React.createElement(Recommendations), 
+          document.getElementById("recommendations")
+        );
+      });
+    </script>
   </body>
+
 </html>
